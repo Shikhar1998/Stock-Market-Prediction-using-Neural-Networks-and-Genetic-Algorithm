@@ -94,7 +94,7 @@ There are three steps to calculating an exponential moving average (EMA). First,
 
 ### 3.3 Training data and parameter values
 The data used to train the neural network is the securities exchange on the Bombay Stock Exchange (BSE) for the time period Jan 1, 1996 to Jan 1 2016.
-The data used to test the neural network is from ` Jan 2016 to 31 July 2017 '.
+The data used to test the neural network is from Jan 2016 to 31 July 2017.
 
 Table 1 and Table 2 provide details about the various parameters for optimisation using the Genetic Algorithm and Neural Networks. 
 Parameter Name	Value
@@ -111,26 +111,17 @@ Performance Parameter	Mean square Error
 Learning Rate	0.001
 Maximum number of Epochs	8000
 Table 2: Parameters used for Neural Networks
-For the neural network we have used the `Gradient Descent with Momentum and Adaptive Learning Rate` to achieve better optimisation results as compared to simple Gradient Descent algorithm. This algorithm tunes the learning rate automatically by observing the regression trace. The number of epochs was set to 8000 to achieve best possible results for each computation.  
+For the neural network we have used the Gradient Descent with Momentum and Adaptive Learning Rate to achieve better optimisation results as compared to simple Gradient Descent algorithm. This algorithm tunes the learning rate automatically by observing the regression trace. The number of epochs was set to 8000 to achieve best possible results for each computation.  
 
-
-
-
-
-
-
-
-
-
-
-3.4Procedure
-Step 1: Calling the `optimtool` (Optimisation Toolbox) 
+#### 3.4Procedure
+##### Step 1: Calling the `optimtool` (Optimisation Toolbox) 
 The first step involves calling the optimtool function in the Matlab command window. 
 In the solver type select Genetic Algorithm. Set the lower and upper bounds of the genetic algorithm they define the number of hidden nodes in the hidden layer.
 Following this click `Start`.
  
 Figure 3: Optimisation Tool
-Step 2: Creating Repetitive Neural Networks for different number of hidden nodes
+
+##### Step 2: Creating Repetitive Neural Networks for different number of hidden nodes
 The genetic algorithm selects the various values of the number of nodes in the hidden layer and calculates and compares the mean square error (M.S.E) which is the performance function. The no. of hidden nodes which correspond to the least Mean Square Error is defined as the ‘Elite’ population and is further used for computation. 
  
 Figure 3: Neural Network Structure in Matlab
@@ -146,7 +137,7 @@ Figure 5: Optimisation Results
 
 
 
-Step 3: Plotting the Final Data Plots(for over 400 points ~ 2years data)
+##### Step 3: Plotting the Final Data Plots(for over 400 points ~ 2years data)
  
 Figure 6: Graphical Plot for Predicted and Actual Values
 
@@ -158,21 +149,24 @@ Figure 6: Graphical Plot for Predicted and Actual Values
 
 
 
-4.	Experimentation Results
+### 4.	Experimentation Results
 In this section we have presented the output of the neural network for predicting the future values for training for different number of years i.e. 5, 10 and 19 years.
-1. 5 years
+
+#### 1. 5 years
 The mean square error offered in this case was 1.1902 x 107 while the number of nodes selected which corresponds to best optimisation results was 6.
  
 Figure 7: Optimisation Results for 5 years
  
 Figure 8: Graphical Plot for Predicted and Actual Values
-2. 10 years
+
+#### 2. 10 years
 The mean square error offered in this case was 1.132 x 105 while the number of nodes selected which corresponds to best optimisation results was 6.
  
 Figure 9: Optimisation Results for 10 years
  
 Figure 10: Graphical Plot for Predicted and Actual Values
-3. 19 years
+
+#### 3. 19 years
 The mean square error offered in this case was 1.0192 x 104while the number of nodes selected which corresponds to best optimisation results was 2.
  
 Figure11: Optimisation Results for 10 years
