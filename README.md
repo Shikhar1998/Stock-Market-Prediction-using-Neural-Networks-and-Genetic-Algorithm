@@ -11,7 +11,7 @@ A programming language must be combined with special tools that support the task
 
 ## 2.	Background
 
-### 2.1	Neural Network
+### 2.1.	Neural Network
 
 #### What is an Artificial Neural Network?
 An Artificial Neural Network (ANN) is an information processing paradigm that is inspired by the way biological nervous systems, such as the brain, process information. The key element of this paradigm is the novel structure of the information processing system.
@@ -30,7 +30,7 @@ Figure 2: Back Propogation Network
 #### Back Propagation Algorithm:
 It is the training or learning algorithm. It learns by example. If you submit to the algorithm the example of what you want the network to do, it changes the network’s weights so that it can produce desired output for a particular input on finishing the training.Back Propagation networks are ideal for simple Pattern Recognition and Mapping Tasks.
 
-### 2.2 Genetic Algorithm
+### 2.2. Genetic Algorithm
 
 #### What is Genetic Algorithm?
 The genetic algorithm is a method for solving both constrained and unconstrained optimization problems that is based on natural selection, the process that drives biological evolution. 
@@ -70,7 +70,7 @@ To create the next generation, the genetic algorithm selects certain individuals
 3.1 Flowchart                                                                                              ----
 Fig: Flowchart of Operation
 
-### 3.2 Features
+### 3.2. Features
 In machine learning and pattern recognition, a feature is an individual measurable property or characteristic of a phenomenon being observed.
  Choosing informative, discriminating and independent features is a crucial step for effective algorithms in pattern recognition, classification and regression. 
 The features used in this project are as follows:
@@ -92,7 +92,7 @@ There are three steps to calculating an exponential moving average (EMA). First,
  
 
 
-### 3.3 Training data and parameter values
+### 3.3. Training data and parameter values
 The data used to train the neural network is the securities exchange on the Bombay Stock Exchange (BSE) for the time period Jan 1, 1996 to Jan 1 2016.
 The data used to test the neural network is from Jan 2016 to 31 July 2017.
 
@@ -113,7 +113,8 @@ Maximum number of Epochs	8000
 Table 2: Parameters used for Neural Networks
 For the neural network we have used the Gradient Descent with Momentum and Adaptive Learning Rate to achieve better optimisation results as compared to simple Gradient Descent algorithm. This algorithm tunes the learning rate automatically by observing the regression trace. The number of epochs was set to 8000 to achieve best possible results for each computation.  
 
-#### 3.4Procedure
+#### 3.4. Procedure
+
 ##### Step 1: Calling the `optimtool` (Optimisation Toolbox) 
 The first step involves calling the optimtool function in the Matlab command window. 
 In the solver type select Genetic Algorithm. Set the lower and upper bounds of the genetic algorithm they define the number of hidden nodes in the hidden layer.
