@@ -20,12 +20,13 @@ An Artificial Neural Network (ANN) is an information processing paradigm that is
 #### Basic Structure of ANNs
 ANNs are composed of multiple nodes, which imitate biological neurons of human brain. The neurons are connected by links and they interact with each other. The nodes can take input data and perform simple operations on the data. The result of these operations is passed to other neurons. The output at each node is called its activation or node value.Each link is associated with weight. ANNs are capable of learning, which takes place by altering weight values. The following illustration shows a simple ANN 
  
-Figure 1: Simple Neural Network
+![Figure 1: Simple Neural Network](https://github.com/Shikhar1998/Stock-Market-Prediction-using-Neural-Networks-and-Genetic-Algorithm/blob/master/Figures/1.png)
+
 
 #### Feed Forward Neural Networks:
 The information flow is unidirectional. A unit sends information to other unit from which it does not receive any information. There are no feedback loops. They are used in pattern generation/recognition/classification. They have fixed inputs and outputs.
  
-Figure 2: Back Propogation Network
+![Figure 2: Back Propogation Network](https://github.com/Shikhar1998/Stock-Market-Prediction-using-Neural-Networks-and-Genetic-Algorithm/blob/master/Figures/2.png)
 
 #### Back Propagation Algorithm:
 It is the training or learning algorithm. It learns by example. If you submit to the algorithm the example of what you want the network to do, it changes the network’s weights so that it can produce desired output for a particular input on finishing the training.Back Propagation networks are ideal for simple Pattern Recognition and Mapping Tasks.
@@ -67,10 +68,8 @@ The fitness value of an individual is the value of the fitness function for that
 To create the next generation, the genetic algorithm selects certain individuals in the current population, called parents, and uses them to create individuals in the next generation, called children. Typically, the algorithm is more likely to select parents that have better fitness values.
 
 3. Proposed Work
-3.1 Flowchart                                                                                              ----
-Fig: Flowchart of Operation
 
-### 3.2. Features
+### 3.1. Features
 In machine learning and pattern recognition, a feature is an individual measurable property or characteristic of a phenomenon being observed.
  Choosing informative, discriminating and independent features is a crucial step for effective algorithms in pattern recognition, classification and regression. 
 The features used in this project are as follows:
@@ -92,7 +91,7 @@ There are three steps to calculating an exponential moving average (EMA). First,
  
 
 
-### 3.3. Training data and parameter values
+### 3.2. Training data and parameter values
 The data used to train the neural network is the securities exchange on the Bombay Stock Exchange (BSE) for the time period Jan 1, 1996 to Jan 1 2016.
 The data used to test the neural network is from Jan 2016 to 31 July 2017.
 
@@ -113,64 +112,44 @@ Maximum number of Epochs	8000
 Table 2: Parameters used for Neural Networks
 For the neural network we have used the Gradient Descent with Momentum and Adaptive Learning Rate to achieve better optimisation results as compared to simple Gradient Descent algorithm. This algorithm tunes the learning rate automatically by observing the regression trace. The number of epochs was set to 8000 to achieve best possible results for each computation.  
 
-#### 3.4. Procedure
+#### 3.3. Procedure
 
 ##### Step 1: Calling the `optimtool` (Optimisation Toolbox) 
 The first step involves calling the optimtool function in the Matlab command window. 
 In the solver type select Genetic Algorithm. Set the lower and upper bounds of the genetic algorithm they define the number of hidden nodes in the hidden layer.
 Following this click `Start`.
- 
-Figure 3: Optimisation Tool
+
+![Figure 3: Optimisation Tool](https://github.com/Shikhar1998/Stock-Market-Prediction-using-Neural-Networks-and-Genetic-Algorithm/blob/master/Figures/3.png)
+
 
 ##### Step 2: Creating Repetitive Neural Networks for different number of hidden nodes
 The genetic algorithm selects the various values of the number of nodes in the hidden layer and calculates and compares the mean square error (M.S.E) which is the performance function. The no. of hidden nodes which correspond to the least Mean Square Error is defined as the ‘Elite’ population and is further used for computation. 
  
-Figure 3: Neural Network Structure in Matlab
+![Figure 4: Neural Network Structure in Matlab](https://github.com/Shikhar1998/Stock-Market-Prediction-using-Neural-Networks-and-Genetic-Algorithm/blob/master/Figures/4.png)
 
- 
-Figure 4: Training Routine of Neural Network
+![Figure 5: Training Routine of Neural Network](https://github.com/Shikhar1998/Stock-Market-Prediction-using-Neural-Networks-and-Genetic-Algorithm/blob/master/Figures/5.png)
 
- 
-Figure 5: Optimisation Results
+![Figure 6: Optimisation Results](https://github.com/Shikhar1998/Stock-Market-Prediction-using-Neural-Networks-and-Genetic-Algorithm/blob/master/Figures/6.png)
 
+##### Step 3: Plotting the Final Data Plots(for over 400 points ~ 2 years data)
 
-
-
-
-
-##### Step 3: Plotting the Final Data Plots(for over 400 points ~ 2years data)
- 
-Figure 6: Graphical Plot for Predicted and Actual Values
-
-
-
-
-
-
-
-
+![Figure 7: Graphical Plot for Predicted and Actual Values (https://github.com/Shikhar1998/Stock-Market-Prediction-using-Neural-Networks-and-Genetic-Algorithm/blob/master/Figures/7.png)
 
 ### 4.	Experimentation Results
 In this section we have presented the output of the neural network for predicting the future values for training for different number of years i.e. 5, 10 and 19 years.
 
 #### 1. 5 years
 The mean square error offered in this case was 1.1902 x 107 while the number of nodes selected which corresponds to best optimisation results was 6.
- 
-Figure 7: Optimisation Results for 5 years
- 
-Figure 8: Graphical Plot for Predicted and Actual Values
+
+![Figure 8: Graphical Plot for Predicted and Actual Values](https://github.com/Shikhar1998/Stock-Market-Prediction-using-Neural-Networks-and-Genetic-Algorithm/blob/master/Figures/8.png)
 
 #### 2. 10 years
 The mean square error offered in this case was 1.132 x 105 while the number of nodes selected which corresponds to best optimisation results was 6.
- 
-Figure 9: Optimisation Results for 10 years
- 
-Figure 10: Graphical Plot for Predicted and Actual Values
+
+![Figure 9: Graphical Plot for Predicted and Actual Values
+](https://github.com/Shikhar1998/Stock-Market-Prediction-using-Neural-Networks-and-Genetic-Algorithm/blob/master/Figures/9.png)
 
 #### 3. 19 years
 The mean square error offered in this case was 1.0192 x 104while the number of nodes selected which corresponds to best optimisation results was 2.
- 
-Figure11: Optimisation Results for 10 years
- 
-Figure 12: Graphical Plot for Predicted and Actual Values
 
+![Figure 10: Graphical Plot for Predicted and Actual Values](https://github.com/Shikhar1998/Stock-Market-Prediction-using-Neural-Networks-and-Genetic-Algorithm/blob/master/Figures/10.png)
