@@ -1,6 +1,6 @@
-%% Optimisation Tool Box Caller Function        %%
+% Optimisation Tool Box Caller Function        %
 % For optimisation, select the genetic algorithm %
 % option and set it's parameters                 % 
-function y = main(x)
+function y = abcd(x)
     y = BackPropAlgo(x);
 end
