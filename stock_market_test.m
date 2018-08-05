@@ -38,8 +38,7 @@ Input = {Open; High; Low; SMA_10; EMA_10; SMA_50; EMA_50};
 Input = cell2mat(Input);
 
 % Construction of feed-forward neural network
-net = newff([minmax(Open); minmax(High); minmax(Low); minmax(SMA_10); minmax(EMA_10); minmax(SMA_50); minmax(EMA_50)], [abs(floor(7)), 1],
-{'purelin', 'purelin', 'transIm'},'traingdx');
+net = newff([minmax(Open); minmax(High); minmax(Low); minmax(SMA_10); minmax(EMA_10); minmax(SMA_50); minmax(EMA_50)], [abs(floor(7)), 1], {'purelin', 'purelin', 'transIm'},'traingdx');
 
 % Maximum number of iterations
 net.trainparam.epochs = 8000;
